@@ -1,0 +1,257 @@
+html {
+	font-size: 18px;
+	line-height: 1.4;
+}
+
+body {
+	background: url("../images/glasses-bg.png") center top no-repeat;
+	background-size: auto 30rem;
+	font-family: Helvetica;
+
+}
+
+.site-container {
+	width: 960px;
+	margin: auto;
+}
+
+.landing {
+	height: 30rem;
+}
+
+header {
+	margin-top: 1rem;
+	width: auto;
+	display: flex;
+	background-color: cadetblue;
+	padding: 1rem 2rem;
+	align-items: center;
+	justify-content: space-between;
+}
+
+header * {
+	font-family: Helvetica;
+	color: white;
+	text-decoration: none;
+}
+
+header div {
+	display: flex;
+	align-items: center;
+}
+
+header img {
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+
+a {
+	padding-left: 2rem;
+}
+
+.menu{
+	display: none;
+}
+
+.action-call {
+	display: flex;
+	margin-top: 10rem;
+	font-size: 2rem;
+	justify-content: flex-end;
+}
+
+.action-call span {
+	position: relative;
+	left: 2rem;
+	padding: 1.5rem 5rem;
+	font-family: Helvetica;
+	background-color: white;
+	font-weight: bold;
+	line-height: 1.2;
+}
+
+.images, .business-info {
+	display: flex;
+	justify-content: center;
+}
+
+.images figure {
+	margin: 3rem;
+	height: 8rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.images figure:first-child img {
+  width: 3.5rem;
+}
+
+.images figure:nth-child(2) img {
+	width: 5rem;
+}
+
+.images figure:nth-child(3) img {
+	width: 5rem;
+}
+
+.images figcaption {
+	text-align: center;
+}
+
+.business-info figure {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 35%;
+	margin: 2.5%;
+	margin-bottom: 5rem;
+}
+
+.business-info figcaption {
+	background-color: cadetblue;
+	font-family: Helvetica;
+	color: white;
+	font-weight: bold;
+	width: 10rem;
+	padding: 0.5rem 1.25rem;
+}
+
+.business-info figure p {
+	margin-top: 1rem;
+}
+
+footer {
+	margin: 4rem;
+	display: flex;
+	align-items: center;
+}
+
+footer img {
+	height: 1.5rem;
+	margin-right: 1rem;
+}
+
+@media only screen and (max-width: 1232px) {
+
+	body {
+		background-size: auto 22rem;
+	}
+
+	.site-container {
+		width: 100%;
+	}
+
+  .landing {
+  	height: 22rem;
+  }
+
+	header {
+		margin-top: 0;
+	}
+
+	.action-call {
+		margin-top: 5rem;
+		font-size: 1.33rem;
+	}
+
+	.action-call span {
+	position: relative;
+	right: 2rem;
+	padding: 0.75rem 4rem;
+  }
+
+}
+
+@media only screen and (max-width: 680px) {
+
+	body {
+		background-size: auto 17rem;
+		background-position: 20% top;
+	}
+
+	.landing {
+		height: 17rem;
+	}
+
+	.menu {
+		display: inline;
+	}
+
+	nav *:not(.menu) {
+		display: none;
+	}
+
+	nav:hover * {
+		display: block;
+		position: relative;
+	}
+
+	nav:hover .menu {
+		display: none;
+	}
+
+	.action-call {
+		padding: 0;
+		margin-top: 9rem;
+		font-size: 1rem;
+	}
+
+	.action-call span{
+		padding: 1rem;
+		text-align: center;
+		width: 100%;
+		position: initial;
+	}
+
+	.images, .business-info {
+		flex-direction: column;
+	}
+
+	.images {
+		margin: 3.77rem;
+	}
+
+	.images figure {
+		height: auto;
+		margin: 0;
+	}
+
+	.images figcaption {
+		font-size: 0.77rem;
+		padding-top: 1rem;
+	}
+
+	.images figcaption {
+		margin-bottom: 1.54rem;	
+	}
+
+	.business-info {
+		position: relative;
+		bottom: 1.54rem;
+		justify-content: center;
+	}
+
+	.business-info figure {
+		width: 100%;
+		margin: 0;
+	}
+
+	.business-info figcaption {
+		width: 100%;
+		text-align: center;
+	}
+
+	.business-info p {
+		padding-bottom: 4rem;
+	}
+
+	footer span {
+		display: none;
+	}
+
+	footer img {
+		margin: auto;
+	}
+}
